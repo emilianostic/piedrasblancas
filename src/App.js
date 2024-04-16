@@ -1,13 +1,13 @@
 import Navigation from "./componentes/navegacion";
 import SidebarNavigation from "./componentes/sidebarNavegacion";
 import Footer from "./componentes/Footer";
-import PiedrasBlancas from "./componentes/piedrasBlancas";
+import DatosPersonales from "./componentes/DatosPersonales";
 function App() {
   return (
     <>
     <div className="container">
     <Navigation/>
-   <PiedrasBlancas/>
+   <DatosPersonales/>
     <SidebarNavigation/>
     <Footer/>
     </div>

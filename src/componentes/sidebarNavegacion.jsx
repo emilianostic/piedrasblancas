@@ -6,13 +6,13 @@ const SidebarNavigation = () => {
     <nav className="sidebar-navigation">
       <ul className="sidebar-navigation-list">
         <li className="sidebar-navigation-item">
-          <a href="/piedrasblancas">Piedras Blancas</a>
+          <a href="/datos-personales">Datos Personales</a>
+        </li>
+        <li className="sidebar-navigation-item">
+          <a href="/yeso-agricola">Hidroponia</a>
         </li>
         <li className="sidebar-navigation-item">
           <a href="/yeso-construccion">Yeso Construcción</a>
-        </li>
-        <li className="sidebar-navigation-item">
-          <a href="/yeso-agricola">Yeso Agrícola</a>
         </li>
         <li className="sidebar-navigation-item">
           <a href="/sitios-de-interes">Sitios de Interés</a>

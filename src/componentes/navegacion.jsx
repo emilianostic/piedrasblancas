@@ -6,13 +6,16 @@ const Navigation = () => {
     <nav className="navigation">
       <ul className="navigation-list">
         <li className="navigation-item">
-          <a href="/piedrasblancas">Piedras Blancas SA</a>
+          <a href="/datos-personales">Datos Personales</a>
         </li>
         <li className="navigation-item">
-          <a href="/yeso-construccion">Yeso Construcción</a>
+          <a href="/hidroponia">Hidroponia</a>
         </li>
         <li className="navigation-item">
           <a href="/yeso-agricola">Yeso Agrícola</a>
+        </li>
+        <li className="navigation-item">
+          <a href="/yeso-construccion">Yeso Construcción</a>
         </li>
         <li className="navigation-item">
           <a href="/sitios-de-interes">Sitios de Interés</a>
