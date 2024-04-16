@@ -5,9 +5,7 @@ const Navigation = () => {
   return (
     <nav className="navigation">
       <ul className="navigation-list">
-        <li className="navigation-item">
-          <a href="/datos-personales">Datos Personales</a>
-        </li>
+        
         <li className="navigation-item">
           <a href="/hidroponia">Hidroponia</a>
         </li>

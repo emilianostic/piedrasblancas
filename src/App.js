@@ -1,5 +1,5 @@
 import Navigation from "./componentes/navegacion";
-import SidebarNavigation from "./componentes/sidebarNavegacion";
+//import SidebarNavigation from "./componentes/sidebarNavegacion";
 import Footer from "./componentes/Footer";
 import DatosPersonales from "./componentes/DatosPersonales";
 function App() {
@@ -8,7 +8,7 @@ function App() {
     <div className="container">
     <Navigation/>
    <DatosPersonales/>
-    <SidebarNavigation/>
+    
     <Footer/>
     </div>
     </>
