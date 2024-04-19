@@ -12,12 +12,16 @@
     background: rgb(219, 231, 200);
     font-family: "Roboto", sans-serif;
     min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
   }
   
   /* Estilos de la navegación superior */
   .navigation {
     background-color: #bfd695;
-    padding: 10px 0;
+    padding: 1% 0;
   }
   
   .navigation-list {
@@ -30,7 +34,9 @@
   
   .navigation-item {
     margin: 0 15px;
+    
   }
+  
   
   .navigation-item a {
     text-decoration: none;
@@ -40,64 +46,19 @@
     transition: background-color 0.3s ease;
   }
   
-  .navigation-item a:hover {
+  .navigation-item:hover {
     background-color: #ddd;
+    cursor: pointer;
   }
   
-  /* Estilos del sidebar */
-  .sidebar-navigation {
-    /*background-color: #f2f2f2;*/
-    padding: 1%;
-    width: 15%;
-    height: calc(100vh - 25vh);
-    position: fixed;
-    top: 25vh;
+  .posterYesoer {
+   
+    background-image: url("./img/posterYesoer.jpeg");
   }
-  
-  .sidebar-navigation-list {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .sidebar-navigation-item {
-    margin-bottom: 1%;
-  }
-  
-  .sidebar-navigation-item a {
-    display: block;
-    text-decoration: none;
-    color: #333;
-    padding: 8px 16px;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .sidebar-navigation-item a:hover {
-    background-color: #ddd;
-  }
-  
-  /* Media query para dispositivos con un ancho máximo de 768px */
-  @media (max-width: 768px) {
-    .sidebar-navigation {
-      width: 100%;
-      height: 100vh;
-      top: 0;
-      left: 0;
-    }
-  
-    .sidebar-navigation-list {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100%;
-    }
-  
-    .sidebar-navigation-item {
-      margin-bottom: 15px;
-    }
-  }
+
+  /*.hidroponik{
+    display: flex;
+      }*/
   .footer {
     background-color: #333;
     color: #fff;

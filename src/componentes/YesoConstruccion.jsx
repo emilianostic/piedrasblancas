@@ -1,3 +1,5 @@
+import '../styles.css'; // Importamos un archivo CSS para los estilos
+
 const YesoConstruccion = () =>{
 
     return (<>
