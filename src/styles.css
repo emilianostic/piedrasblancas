@@ -56,9 +56,10 @@
     background-image: url("./img/posterYesoer.jpeg");
   }
 
-  /*.hidroponik{
-    display: flex;
-      }*/
+  .video-hidroponia{
+   text-align: center;
+    margin-top: 2%;
+      }
   .footer {
     background-color: #333;
     color: #fff;
