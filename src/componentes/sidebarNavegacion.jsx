@@ -9,7 +9,7 @@ const SidebarNavigation = () => {
           <a href="/datos-personales">Datos Personales</a>
         </li>
         <li className="sidebar-navigation-item">
-          <a href="/yeso-agricola">Hidroponia</a>
+          <a href="/hidroponia">EV hidroponia</a>
         </li>
         <li className="sidebar-navigation-item">
           <a href="/yeso-construccion">Yeso Construcción</a>

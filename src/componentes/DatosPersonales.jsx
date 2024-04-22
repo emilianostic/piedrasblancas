@@ -195,7 +195,7 @@ const DatosPersonales = () => {
                                 </div>
                                 <div class="experience_data bd-grid">
                                     <h3 class="experience_title">REACTJS DESDE CERO PARA PRINCIPIANTES</h3>
-                                    <span class="experience_company">Dic 2023 - en pausa | <a href="https://interns.pk/">Interns Pakistan</a></span>
+                                    
                                     <p class="experience_description">
                                         En este curso de React estoy aprendiendo las bases necesarias de React como componentes (Components), props, estado (useState), hooks, estilos, useContext, useEffect, ademas de usar otras herramientas como create-react-app, vitejs, tailwindcss, react-icons y otras mas bibliotecas de npm (Nodejs).
                                     </p>
