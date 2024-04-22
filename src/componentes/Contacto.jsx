@@ -1,11 +1,11 @@
-import '../styles.css'; // Importamos un archivo CSS para los estilos
-import YesoerPlaK from '../img/YesoerPlaK.png' // Importa tu imagen aquí
 
-const YesoConstruccion = () =>{
+import '../styles.css'; // Importamos un archivo CSS para los estilos
+
+const Contacto = () =>{
 
     return (<>
 
-<img src={YesoerPlaK} alt="YesoerPlaK" className="yesoerPlaK" />
+
 <article>
 Denominación Comercial:
 YESOER PLAK
@@ -29,4 +29,4 @@ Embalaje de presentación comercial:
 
 </> );
 };
-export default YesoConstruccion
+export default Contacto

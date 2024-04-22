@@ -4,9 +4,9 @@ import Hidroponia from './Hidroponia';
 import YesoAgricola from './YesoAgricola';
 import YesoConstruccion from './YesoConstruccion';
 import DatosPersonales from './DatosPersonales';
-//import SitiosDeInteres from './SitiosDeInteres';
-//import Contacto from './Contacto';
-//import Documentacion from './Documentacion';
+import SitiosDeInteres from './SitiosDeInteres';
+import Contacto from './Contacto';
+
 
 const Navigation = () => {
   const [componenteActual, setComponenteActual] = useState(null);
@@ -19,12 +19,12 @@ const Navigation = () => {
         return <YesoAgricola />;
       case 'yeso-construccion':
         return <YesoConstruccion />;
-    /*  case 'sitios-de-interes':
+    case 'sitios-de-interes':
          return <SitiosDeInteres />;
       case 'contacto':
         return <Contacto />;
-      case 'documentacion':
-        return <Documentacion />; */
+      case 'inicio':
+        return <DatosPersonales />;
       default:
         return (
           <>
@@ -53,8 +53,8 @@ const Navigation = () => {
           <li className="navigation-item" onClick={() => setComponenteActual('contacto')}>
             Contacto
           </li>
-          <li className="navigation-item" onClick={() => setComponenteActual('documentacion')}>
-            Documentación
+          <li className="navigation-item" onClick={() => setComponenteActual('inicio')}>
+            Inicio
           </li>
         </ul>
       </nav>

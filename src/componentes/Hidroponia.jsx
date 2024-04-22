@@ -1,6 +1,6 @@
 import '../styles.css'; // Importamos un archivo CSS para los estilos
 import evhidroponia from '../img/EV-hidroponia-round.png' // Importa tu imagen aquí
-
+import video from '../video/videoHidrop.mp4'
 const Hidroponia = () =>{
 
     return (<>
@@ -14,9 +14,9 @@ const Hidroponia = () =>{
 
 <div className='video-hidroponia'>
     <h4>Video del prototipo hidropónico NFT (Nutrient Film Technique) con hortalizas de hoja.</h4>
-    <video width="250" height="200" controls autoplay onended="this.load()">
-        <source src="./video/VID-20220506-WA0025.mp4" type="video/mp4" />
-    </video>
+    <video width="250" height="200" controls>
+          <source src={video} type="video/mp4" />
+        </video>
 </div>
 
 

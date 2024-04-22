@@ -21,7 +21,7 @@ const SidebarNavigation = () => {
           <a href="/contacto">Contacto</a>
         </li>
         <li className="sidebar-navigation-item">
-          <a href="/documentacion">Documentación</a>
+          <a href="/inicio">Inicio</a>
         </li>
       </ul>
     </nav>

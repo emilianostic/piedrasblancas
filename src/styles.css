@@ -65,7 +65,11 @@
   width: 10%;
   margin:auto;
      }
-
+     .yesoerPlaK {
+      text-align: center;
+      width: 30%;
+      margin:auto;
+         }
 
   .footer {
     background-color: #333;
