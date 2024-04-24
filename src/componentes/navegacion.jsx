@@ -56,11 +56,19 @@ const Navigation = () => {
           <li className="navigation-item" onClick={() => setComponenteActual('inicio')}>
             Inicio
           </li>
+          <div class="flex items-center gap-6">
+          <ion-icon name="menu-outline" class="text-3xl cursor-pointer"></ion-icon>
+
+          </div>
+          <h1 >
+    Hello world!
+  </h1>
         </ul>
       </nav>
       <div className="contenido">
         {mostrarComponente()}
       </div>
+      
     </div>
   );
 };
