@@ -6,7 +6,7 @@ const Hidroponia = () =>{
     return (<>
     <img src={evhidroponia} alt="ev hidroponia" className="evHidroponia" />
 
-    <article>
+    <article className='hidroponia'>
     ¿Qué es la Hidroponia?
     La hidroponía es una técnica de cultivo en la que no se utiliza suelo, y los nutrientes
     que necesita la planta para crecer son provistos a través del agua.
@@ -14,7 +14,7 @@ const Hidroponia = () =>{
 
 <div className='video-hidroponia'>
     <h4>Video del prototipo hidropónico NFT (Nutrient Film Technique) con hortalizas de hoja.</h4>
-    <video width="250" height="200" controls>
+    <video width="500" height="400" controls>
           <source src={video} type="video/mp4" />
         </video>
 </div>
