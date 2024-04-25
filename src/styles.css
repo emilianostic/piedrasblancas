@@ -69,7 +69,7 @@ body {
   margin: auto;
 }
 
-<<<<<<< HEAD
+
   .footer {
     background-color: #333;
     color: #fff;
@@ -81,10 +81,8 @@ body {
     width: 100%;
   }
   
-  @tailwind base;
-  @tailwind components;
-  @tailwind utilities; 
-=======
+  
+
 .hidroponia {
   text-align: center;
   width: 30%;
@@ -107,4 +105,3 @@ body {
   bottom: 0;
   width: 100%;
 }
->>>>>>> 2e80a7d8f4ccfc9f4565ff7439457baff949d81b

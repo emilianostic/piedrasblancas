@@ -12,12 +12,16 @@ const Hidroponia = () =>{
     que necesita la planta para crecer son provistos a través del agua.
     </article>
 
-<div className='video-hidroponia'>
-    <h4>Video del prototipo hidropónico NFT (Nutrient Film Technique) con hortalizas de hoja.</h4>
-    <video width="500" height="400" controls>
-          <source src={video} type="video/mp4" />
+    <div className="flex flex-col items-center justify-center h-full">
+    <h4 className="mb-4">Video del prototipo hidropónico NFT (Nutrient Film Technique) con hortalizas de hoja.</h4>
+    
+    <div className="w-full md:w-auto">
+        <video className="w-full h-auto md:h-auto" controls>
+            <source src={video} type="video/mp4" />
         </video>
+    </div>
 </div>
+
 
 
 </> );

@@ -15,6 +15,8 @@ const YesoAgricola = () =>{
     <li>En bolsas de 40 Kg.</li>
     <li>A Granel</li>
 </ul>
+</div>
+<div className="flex flex-col items-center justify-center h-full">
 <img src={posterYesoer} alt="Poster Yesoer" className="posterYesoer" />
 </div></> );
 };
