@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import "../styles.css"; // Importamos un archivo CSS para los estilos
+import React, { useState, useEffect } from 'react';
 import Hidroponia from './Hidroponia';
 import YesoAgricola from './YesoAgricola';
 import YesoConstruccion from './YesoConstruccion';
@@ -10,6 +9,20 @@ import Contacto from './Contacto';
 const Navigation = () => {
   const [componenteActual, setComponenteActual] = useState(null);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    function handleResize() {
+      setIsMobile(window.innerWidth <= 768);
+      if (!isMobile && menuOpen) {
+        setMenuOpen(false);
+      }
+    }
+
+    window.addEventListener('resize', handleResize);
+    handleResize();
+    return () => window.removeEventListener('resize', handleResize);
+  }, [menuOpen, isMobile]);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
@@ -36,57 +49,129 @@ const Navigation = () => {
 
   return (
     <div>
-      <nav className="navigation">
-        {/* Navegación para pantallas más grandes que tablet */}
-        <ul className="navigation-list hidden md:flex flex-col md:flex-row">
-          <li className="navigation-item" onClick={() => setComponenteActual('hidroponia')}>
-            Hidroponia
-          </li>
-          <li className="navigation-item" onClick={() => setComponenteActual('yeso-agricola')}>
-            Yeso Agrícola
-          </li>
-          <li className="navigation-item" onClick={() => setComponenteActual('yeso-construccion')}>
-            Yeso Construcción
-          </li>
-          <li className="navigation-item" onClick={() => setComponenteActual('sitios-de-interes')}>
-            Sitios de Interés
-          </li>
-          <li className="navigation-item" onClick={() => setComponenteActual('contacto')}>
-            Contacto
-          </li>
-          <li className="navigation-item" onClick={() => setComponenteActual('inicio')}>
-            Inicio
-          </li>
-        </ul>
-        
-        {/* Icono de menú para pantallas más pequeñas */}
-        <div className="flex items-center gap-6 md:hidden flex-col">
-          <ion-icon name="menu-outline" className="text-3xl cursor-pointer" onClick={toggleMenu}></ion-icon>
+      <nav className="bg-gray-800">
+        <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+          <div className="relative flex items-center justify-between h-16">
+            <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
+              <button
+                onClick={toggleMenu}
+                type="button"
+                className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:bg-gray-700 focus:text-white transition duration-150 ease-in-out"
+                aria-label="Main menu"
+                aria-expanded="false"
+              >
+                <svg
+                  className={`${menuOpen ? 'hidden' : 'block'} h-6 w-6`}
+                  stroke="currentColor"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M4 6h16M4 12h16m-7 6h7"
+                  />
+                </svg>
+                <svg
+                  className={`${menuOpen ? 'block' : 'hidden'} h-6 w-6`}
+                  stroke="currentColor"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
+              <div className="hidden sm:block sm:ml-6">
+                <div className="flex">
+                  <button
+                    onClick={() => setComponenteActual('hidroponia')}
+                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                  >
+                    Hidroponia
+                  </button>
+                  <button
+                    onClick={() => setComponenteActual('yeso-agricola')}
+                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                  >
+                    Yeso Agrícola
+                  </button>
+                  <button
+                    onClick={() => setComponenteActual('yeso-construccion')}
+                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                  >
+                    Yeso Construcción
+                  </button>
+                  <button
+                    onClick={() => setComponenteActual('sitios-de-interes')}
+                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                  >
+                    Sitios de Interés
+                  </button>
+                  <button
+                    onClick={() => setComponenteActual('contacto')}
+                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                  >
+                    Contacto
+                  </button>
+                  <button
+                    onClick={() => setComponenteActual('inicio')}
+                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                  >
+                    Inicio
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-
-        {/* Menú desplegable para pantallas más pequeñas */}
-        {menuOpen && (
-          <ul className="navigation-list md:hidden flex-col">
-            <li className="navigation-item" onClick={() => { setComponenteActual('hidroponia'); toggleMenu(); }}>
+        <div className={`${menuOpen ? 'block' : 'hidden'} sm:hidden`}>
+          <div className="px-2 pt-2 pb-3">
+            <button
+              onClick={() => { setComponenteActual('hidroponia'); setMenuOpen(false); }}
+              className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+            >
               Hidroponia
-            </li>
-            <li className="navigation-item" onClick={() => { setComponenteActual('yeso-agricola'); toggleMenu(); }}>
+            </button>
+            <button
+              onClick={() => { setComponenteActual('yeso-agricola'); setMenuOpen(false); }}
+              className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+            >
               Yeso Agrícola
-            </li>
-            <li className="navigation-item" onClick={() => { setComponenteActual('yeso-construccion'); toggleMenu(); }}>
+            </button>
+            <button
+              onClick={() => { setComponenteActual('yeso-construccion'); setMenuOpen(false); }}
+              className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+            >
               Yeso Construcción
-            </li>
-            <li className="navigation-item" onClick={() => { setComponenteActual('sitios-de-interes'); toggleMenu(); }}>
+            </button>
+            <button
+              onClick={() => { setComponenteActual('sitios-de-interes'); setMenuOpen(false); }}
+              className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+            >
               Sitios de Interés
-            </li>
-            <li className="navigation-item" onClick={() => { setComponenteActual('contacto'); toggleMenu(); }}>
+            </button>
+            <button
+              onClick={() => { setComponenteActual('contacto'); setMenuOpen(false); }}
+              className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+            >
               Contacto
-            </li>
-            <li className="navigation-item" onClick={() => { setComponenteActual('inicio'); toggleMenu(); }}>
+            </button>
+            <button
+              onClick={() => { setComponenteActual('inicio'); setMenuOpen(false); }}
+              className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+            >
               Inicio
-            </li>
-          </ul>
-        )}
+            </button>
+          </div>
+        </div>
       </nav>
       <div className="contenido">
         {mostrarComponente()}
@@ -96,5 +181,8 @@ const Navigation = () => {
 };
 
 export default Navigation;
+
+
+
 
 
