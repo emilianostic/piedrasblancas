@@ -105,3 +105,10 @@ body {
   bottom: 0;
   width: 100%;
 }
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Cookie&family=Fuzzy+Bubbles&family=Lobster&family=Pacifico&family=Redressed&family=Shadows+Into+Light&family=Vujahday+Script&display=swap');
+
+
+hr {
+  border-color: #9cc7f3;
+}
+
