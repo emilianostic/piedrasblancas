@@ -173,7 +173,7 @@ const Navigation = () => {
           </div>
         </div>
       </nav>
-      <div className="contenido">
+      <div>
         {mostrarComponente()}
       </div>
     </div>
