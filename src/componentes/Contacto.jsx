@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import emailjs from '@emailjs/browser';
-import '../styles.css'; // Importamos un archivo CSS para los estilos
+
 
 const Contacto = () => {
   const [nombreValido, setNombreValido] = useState(true);
@@ -33,9 +33,9 @@ const Contacto = () => {
   };
 
   return (
-    <div className='flex flex-col items-center min-h-screen bg-gradient-to-br from-gray-900 to-gray-600'>
+    <div className='flex flex-col items-center min-h-screen bg-white'>
       <h1 className='text-white text-xl font-semibold font-shadows'>Contactémonos</h1>
-      <form className='w-100 border-4 border-white rounded-lg shadow-lg bg-gray-800 text-white bg-opacity-80 p-4 flex flex-col items-center' onSubmit={sendEmail}>
+      <form className='w-180 border-4 border-white rounded-lg shadow-lg bg-gray-800 text-white bg-opacity-80 p-4 flex flex-col items-center' onSubmit={sendEmail}>
         <label className='text-white text-xl font-bold mb-2'>Nombre</label>
         <input type="text" name='user_name' className={`w-full text-white bg-transparent rounded-full px-4 py-2 mb-4 ${nombreValido ? '' : 'border-red-500'}`} placeholder='Juan Pérez'/>
         {!nombreValido && <span className="text-red-500 text-sm">Debés ingresar tu nombre</span>}

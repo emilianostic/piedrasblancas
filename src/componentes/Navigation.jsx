@@ -61,7 +61,7 @@ const Navigation = ({ setComponenteActual }) => {
               </svg>
             </button>
           </div>
-          <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
+          <div className="flex-1 flex items-center justify-center sm:items-stretch">
             <div className="hidden sm:block sm:ml-6">
               <div className="flex">
                 <button
