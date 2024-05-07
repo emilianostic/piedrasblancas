@@ -1,8 +1,8 @@
 //import Navigation from "./componentes/Navigation";
 //import SidebarNavigation from "./componentes/sidebarNavegacion";
 import Principal from "./componentes/Principal";
-import Footer from "./componentes/Footer";
-
+//import Footer from "./componentes/Footer";
+import WhatsappContact from "./componentes/Whatsapp";
 function App() {
   return (
     <>
@@ -10,7 +10,7 @@ function App() {
    
    <Principal/>
     
-    <Footer/>
+    <WhatsappContact/>
     </div>
     </>
     
