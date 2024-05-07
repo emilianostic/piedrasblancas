@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+/* import React, { useState, useEffect } from 'react';
 import Hidroponia from './Hidroponia';
 import YesoAgricola from './YesoAgricola';
 import YesoConstruccion from './YesoConstruccion';
@@ -182,7 +182,7 @@ const Navigation = () => {
 
 export default Navigation;
 
-
+ */
 
 
 
