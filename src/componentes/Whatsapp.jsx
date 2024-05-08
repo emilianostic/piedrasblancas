@@ -1,17 +1,17 @@
-import whatsappLogo from '../img/logo-whatsapp.jpg'
-import "../css/styles.css";
+import whatsappLogo from '../img/whatsapp-logo-png.png'
+//import "../css/styles.css";
 
 
 const WhatsappContact = () => {
   const handleWhatsappClick = () => {
-    const phoneNumber = '123456789'; // Reemplaza con tu número de teléfono
+    const phoneNumber = '3434759182'; // Reemplaza con tu número de teléfono
     const message = 'Hola, quiero contactarte.';
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
 
   return (
-    <div className='footer'>
+    <div className='fixed inset-x-0 bottom-0 bg-gray-900 text-white text-center py-2 flex justify-end'>
       <img
         src={whatsappLogo}
         alt="WhatsApp"
