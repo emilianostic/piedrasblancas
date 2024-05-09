@@ -5,7 +5,7 @@ import whatsappLogo from '../img/whatsapp-logo-png.png'
 const WhatsappContact = () => {
   const handleWhatsappClick = () => {
     const phoneNumber = '3434759182'; 
-    const message = 'Hola, quiero contactarte.';
+    const message = 'Hola, mi nombre es ';
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
