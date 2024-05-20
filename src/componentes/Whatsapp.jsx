@@ -11,7 +11,7 @@ const WhatsappContact = () => {
   };
 
   return (
-    <div className='fixed inset-x-0 bottom-0 bg-gray-900 text-white text-center py-2 flex justify-end'>
+    <div className='fixed inset-x-0 bottom-0 bg-gray-900 text-white text-center py-1 flex justify-end'>
       <img
         src={whatsappLogo}
         alt="WhatsApp"
