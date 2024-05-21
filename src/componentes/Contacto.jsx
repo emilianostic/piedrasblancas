@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import emailjs from '@emailjs/browser';
 
-
 const Contacto = () => {
   const [nombreValido, setNombreValido] = useState(true);
   const [emailValido, setEmailValido] = useState(true);
+  const [mensajeExito, setMensajeExito] = useState('');
 
   const sendEmail = (event) => {
     event.preventDefault();
@@ -28,8 +28,15 @@ const Contacto = () => {
 
     emailjs
       .sendForm('service_7c2gcp4', 'template_tzdmmf5', event.target, 'NHQruOI3BzUISlenQ')
-      .then((response) => console.log(response))
-      .catch((error) => console.log(error));
+      .then((response) => {
+        console.log(response);
+        setMensajeExito('Formulario enviado.');
+        event.target.reset(); // Reiniciar el formulario
+      })
+      .catch((error) => {
+        console.log(error);
+        setMensajeExito('Error al enviar el formulario.');
+      });
   };
 
   return (
@@ -58,8 +65,8 @@ const Contacto = () => {
         <textarea name="user_message" cols="30" rows="4" className='w-full bg-gray-400 rounded-lg px-4 py-2 mb-4' placeholder='...'></textarea>
         <hr className='w-full' />
 
-        
         <button className='w-32 rounded-full text-xl text-black bg-gray-300 hover:bg-gray-400 hover:text-gray-800 transition duration-300'>Enviar</button>
+        {mensajeExito && <span className='text-white text-sm mt-4'>{mensajeExito}</span>}
       </form>
     </div>
   );

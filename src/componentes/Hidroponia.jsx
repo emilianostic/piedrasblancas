@@ -81,7 +81,7 @@ const Hidroponia = () => {
         <form className='w-180 border-4 border-white rounded-lg shadow-lg bg-gray-800 text-white bg-opacity-80 p-4 flex flex-col items-center' onSubmit={sendEmail}>
           <label className='text-white text-xl font-bold mb-2'>Nombre</label>
           <input type="text" name='user_name' className={`w-full text-white bg-transparent rounded-full px-4 py-2 mb-4 ${nombreValido ? '' : 'border-red-500'}`} placeholder='Juan Pérez'/>
-          {!nombreValido && <span className="text-red-500 text-sm">Debés ingresar tu nombre</span>}
+          {!nombreValido && <span className="text-red-500 text-sm">Debes ingresar tu nombre</span>}
           <hr className='w-full' />
 
           <label className='text-white text-xl font-bold mb-2'>Correo electrónico</label>
@@ -97,31 +97,28 @@ const Hidroponia = () => {
           <input type="text" name='linkedin' className='w-full text-white bg-transparent rounded-full px-4 py-2 mb-4' placeholder='@usuario'/>
           <hr className='w-full' />
 
-          <label className='text-white text-xl font-bold mb-2'>Escriba cualquier información que considere necesaria</label>
-          <textarea name="user_message" cols="30" rows="4" className='w-full bg-gray-400 rounded-lg px-4 py-2 mb-4' placeholder='...'></textarea>
-          <hr className='w-full' />
-
-          <label className='text-white text-xl font-bold mb-2'>¿Tiene espacio verde?</label>
+          
+          <label className='text-white text-xl font-bold mb-2'>¿Tienes espacio verde?</label>
           <select name='espacio_verde' className='w-full text-white bg-gray-400 rounded-full px-4 py-2 mb-4'>
-            <option value=''>Seleccione una opción</option>
+            <option value=''>Selecciona una opción</option>
             <option value='si'>Sí</option>
             <option value='no'>No</option>
           </select>
           <hr className='w-full' />
 
-          <label className='text-white text-xl font-bold mb-2'>¿Tiene espacio con luz pero sin verde?</label>
+          <label className='text-white text-xl font-bold mb-2'>¿Tienes espacio con luz pero sin verde?</label>
           <select name='espacio_luz' className='w-full text-white bg-gray-400 rounded-full px-4 py-2 mb-4'>
-            <option value=''>Seleccione una opción</option>
+            <option value=''>Selecciona una opción</option>
             <option value='si'>Sí</option>
             <option value='no'>No</option>
           </select>
           <hr className='w-full' />
 
-          <label className='text-white text-xl font-bold mb-2'>¿Qué superficie aproximada tiene? en metros</label>
+          <label className='text-white text-xl font-bold mb-2'>¿Qué superficie aproximada tienes? en metros</label>
           <input type="text" name='superficie' className='w-full text-white bg-gray-400 rounded-full px-4 py-2 mb-4' placeholder='...'/>
           <hr className='w-full' />
 
-          <label className='text-white text-xl font-bold mb-2'>¿Quiere producir alimentos?</label>
+          <label className='text-white text-xl font-bold mb-2'>¿Quieres producir alimentos?</label>
           <select name='producir_alimentos' className='w-full text-white bg-gray-400 rounded-full px-4 py-2 mb-4'>
             <option value=''>Seleccione una opción</option>
             <option value='si'>Sí</option>
@@ -129,14 +126,18 @@ const Hidroponia = () => {
           </select>
           <hr className='w-full' />
 
-          <label className='text-white text-xl font-bold mb-2'>¿Cuánto tiempo piensa dedicarle al huerto urbano?</label>
+          <label className='text-white text-xl font-bold mb-2'>¿Cuántas horas piensas dedicarle al huerto urbano?</label>
           <select name='tiempo_dedicado' className='w-full text-white bg-gray-400 rounded-full px-4 py-2 mb-4'>
             <option value=''>Seleccione una opción</option>
-            <option value='1'>1 hora por día</option>
-            <option value='2'>2 horas por día</option>
-            <option value='3'>3 horas por día</option>
-            <option value='mas'>Más de 3 horas por día</option>
+            <option value='1'>1 </option>
+            <option value='2'>2 </option>
+            <option value='3'>3 </option>
+            <option value='mas'>Más de 3 </option>
           </select>
+          <hr className='w-full' />
+
+          <label className='text-white text-xl font-bold mb-2'>Escribe cualquier información que consideres necesaria</label>
+          <textarea name="user_message" cols="30" rows="4" className='w-full bg-gray-400 rounded-lg px-4 py-2 mb-4' placeholder='...'></textarea>
           <hr className='w-full' />
 
           <button className='w-32 rounded-full text-xl text-black bg-gray-300 hover:bg-gray-400 hover:text-gray-800 transition duration-300'>Enviar</button>

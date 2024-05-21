@@ -49,7 +49,7 @@ const DatosPersonales = () => {
                     <i className='bx bx-grid-alt'></i>
                 </div>
             </nav>
-        </header>
+        </header> 
 
         <main className="l-main bd-container">
             
@@ -60,7 +60,7 @@ const DatosPersonales = () => {
                         <div className="home_containter section bd-grid">
                             <div className="home_data bd-grid">
                                 <img alt="" className="home_img"/>
-                                <h1 className="home_title">EMILIANO <b>VELÁZQUEZ</b></h1>
+                                <h1 className="home_title"><b>EMILIANO VELÁZQUEZ</b></h1>
                                 <h3 className="home_profession">Estudiante de Programación - Ing. Agrónomo</h3>
                                 
                                 <div>
@@ -297,4 +297,4 @@ const DatosPersonales = () => {
 </>
     )
 }
-export default DatosPersonales
+export default DatosPersonales 
