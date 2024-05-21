@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/piedrasblancas/static/css/main.ad9853f5.css",
-    "main.js": "/piedrasblancas/static/js/main.3e5b425c.js",
+    "main.css": "/piedrasblancas/static/css/main.efa19c19.css",
+    "main.js": "/piedrasblancas/static/js/main.6da5d314.js",
     "static/js/453.6a06c5a1.chunk.js": "/piedrasblancas/static/js/453.6a06c5a1.chunk.js",
     "static/media/videoHidrop.mp4": "/piedrasblancas/static/media/videoHidrop.cfb13bb49142967d55ec.mp4",
     "static/media/YesoerPlaK.png": "/piedrasblancas/static/media/YesoerPlaK.371209b0edf9d1d85701.png",
@@ -9,12 +9,12 @@
     "static/media/EV-hidroponia-round.png": "/piedrasblancas/static/media/EV-hidroponia-round.c3c0d5beded42e43c607.png",
     "static/media/whatsapp-logo-png.png": "/piedrasblancas/static/media/whatsapp-logo-png.e83e06344589a18012a7.png",
     "index.html": "/piedrasblancas/index.html",
-    "main.ad9853f5.css.map": "/piedrasblancas/static/css/main.ad9853f5.css.map",
-    "main.3e5b425c.js.map": "/piedrasblancas/static/js/main.3e5b425c.js.map",
+    "main.efa19c19.css.map": "/piedrasblancas/static/css/main.efa19c19.css.map",
+    "main.6da5d314.js.map": "/piedrasblancas/static/js/main.6da5d314.js.map",
     "453.6a06c5a1.chunk.js.map": "/piedrasblancas/static/js/453.6a06c5a1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ad9853f5.css",
-    "static/js/main.3e5b425c.js"
+    "static/css/main.efa19c19.css",
+    "static/js/main.6da5d314.js"
   ]
 }
