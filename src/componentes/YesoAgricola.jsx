@@ -1,10 +1,10 @@
-//import '../styles.css'; // Importamos un archivo CSS para los estilos
+import '../styles.css'; // Importamos un archivo CSS para los estilos
 import posterYesoer from '../img/posterYesoer.jpeg' // Importa tu imagen aquí
 const YesoAgricola = () =>{
 
     return (<>
-    <div class="text-center border border-gray-300 rounded p-6">
-        <h1 class="text-2xl font-bold mb-4">YESO AGRÍCOLA - YESOER</h1>
+    <div class="text-center border rounded p-6">
+        <h1 class="text-2xl font-bold mb-4">Yeso Agrícola - YESOER</h1>
         <p class="mb-4">YESOER es yeso agrícola mineral 100% natural</p>
         <h4 class="text-lg font-bold mb-2">Presentación:</h4>
         <ul >
