@@ -63,9 +63,9 @@ const DatosPersonales = () => {
                                 <h1 className="home_title"><b>EMILIANO VELÁZQUEZ</b></h1>
                                 <h3 className="home_profession">Estudiante de Programación - Ing. Agrónomo</h3>
                                 
-                                <div>
+                               <div>
                                     <a download="" href="assets/pdf/IngAgrEspVelazquezE.pdf" className="home_button-movil">Download</a>
-                                </div>
+                                </div> 
                             </div>
                             <div className="home_address bd-grid">
                                 <span className="home_information">
