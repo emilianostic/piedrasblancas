@@ -60,27 +60,29 @@ const Hidroponia = () => {
 
   return (
     <>
+    <div className="flex-col items-center justify-center min-h-screen p-5">
       <img src={evhidroponia} alt="ev hidroponia" className="mx-auto w-20" />
+      <div className="flex flex-col items-center justify-center h-full">
 
-      <article className='text-center mt-2'>
+      <article className="text-justify text-white max-w-3xl p-5 font-medium">
         En EV hidroponía se cultivan hortalizas de hoja como kale, rúcula, lechuga y col asiática. Además realizamos el cultivo de albahaca. La técnica utilizada es la N.F.T. o de la lámina de nutrientes (del inglés N.F.T. -Nutrient Film Technique-) en la cuál se utiliza una solución que está en un contenedor con una bomba que permite que la misma circule por los canales que sostienen a las plantas haciendo que la lámina con los nutrientes vaya tomando contacto con las raíces para luego ser recolectada para volver al recipiente y ser bombeada nuevamente.
       </article>
-
+</div>
       <div className="flex flex-col items-center justify-center h-full">
         <h4 className="mb-4">Video del prototipo hidropónico NFT (Nutrient Film Technique) con hortalizas de hoja.</h4>
 
-        <div className="w-full md:w-auto">
+        <div className="md:w-auto">
           <video className="w-full h-auto md:h-auto" controls>
             <source src={video} type="video/mp4" />
           </video>
         </div>
       </div>
-
-      <div className='flex flex-col items-center min-h-screen bg-white'>
+      </div>
+      <div className='flex flex-col items-center min-h-screen bg-black mb-40'>
         <h1 className='text-black text-xl font-semibold font-shadows'>Contactémonos</h1>
         <form className='w-180 border-4 border-white rounded-lg shadow-lg bg-gray-800 text-white bg-opacity-80 p-4 flex flex-col items-center' onSubmit={sendEmail}>
           <label className='text-white text-xl font-bold mb-2'>Nombre</label>
-          <input type="text" name='user_name' className={`w-full text-white bg-transparent rounded-full px-4 py-2 mb-4 ${nombreValido ? '' : 'border-red-500'}`} placeholder='Juan Pérez'/>
+          <input type="text" name='user_name' className={`w-full text-white bg-transparent rounded-full px-4 py-2 mb-4 ${nombreValido ? '' : 'border-red-500'}`} placeholder='Fulano de Tal'/>
           {!nombreValido && <span className="text-red-500 text-sm">Debes ingresar tu nombre</span>}
           <hr className='w-full' />
 

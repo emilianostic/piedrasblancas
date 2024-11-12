@@ -66,37 +66,37 @@ const Navigation = ({ setComponenteActual }) => {
               <div className="flex">
                 <button
                   onClick={() => setComponenteActual('hidroponia')}
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                  className="text-gray-200 hover:bg-gray-600 px-3 py-2 rounded-md text-l"
                 >
                   Hidroponia
                 </button>
                 <button
                   onClick={() => setComponenteActual('yeso-agricola')}
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                  className="text-gray-200 hover:bg-gray-600 px-3 py-2 rounded-md text-l"
                 >
                   Yeso Agrícola
                 </button>
                 <button
                   onClick={() => setComponenteActual('yeso-construccion')}
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                  className="text-gray-200 hover:bg-gray-600 px-3 py-2 rounded-md text-l"
                 >
                   Yeso Construcción
                 </button>
                 <button
                   onClick={() => setComponenteActual('sitios-de-interes')}
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                  className="text-gray-200 hover:bg-gray-600 px-3 py-2 rounded-md text-l"
                 >
                   Sitios de Interés
                 </button>
                 <button
                   onClick={() => setComponenteActual('contacto')}
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                  className="text-gray-200 hover:bg-gray-600 px-3 py-2 rounded-md text-l"
                 >
                   Contacto
                 </button>
                 <button
                   onClick={() => setComponenteActual('inicio')}
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                  className="text-gray-200 hover:bg-gray-600 px-3 py-2 rounded-md text-l"
                 >
                   Inicio
                 </button>
@@ -109,37 +109,37 @@ const Navigation = ({ setComponenteActual }) => {
         <div className="px-2 pt-2 pb-3">
           <button
             onClick={() => { setComponenteActual('hidroponia'); setMenuOpen(false); }}
-            className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+            className="text-gray-200 hover:bg-gray-600 px-3 py-2 rounded-md text-l"
           >
             Hidroponia
           </button>
           <button
             onClick={() => { setComponenteActual('yeso-agricola'); setMenuOpen(false); }}
-            className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+            className="text-gray-200 hover:bg-gray-600 px-3 py-2 rounded-md text-l"
           >
             Yeso Agrícola
           </button>
           <button
             onClick={() => { setComponenteActual('yeso-construccion'); setMenuOpen(false); }}
-            className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+            className="text-gray-200 hover:bg-gray-600 px-3 py-2 rounded-md text-l"
           >
             Yeso Construcción
           </button>
           <button
             onClick={() => { setComponenteActual('sitios-de-interes'); setMenuOpen(false); }}
-            className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+            className="text-gray-200 hover:bg-gray-600 px-3 py-2 rounded-md text-l"
           >
             Sitios de Interés
           </button>
           <button
             onClick={() => { setComponenteActual('contacto'); setMenuOpen(false); }}
-            className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+            className="text-gray-200 hover:bg-gray-600 px-3 py-2 rounded-md text-l"
           >
             Contacto
           </button>
           <button
             onClick={() => { setComponenteActual('inicio'); setMenuOpen(false); }}
-            className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+            className="text-gray-200 hover:bg-gray-600 px-3 py-2 rounded-md text-l"
           >
             Inicio
           </button>
