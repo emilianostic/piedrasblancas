@@ -5,9 +5,9 @@ import profile2 from "../img/profile2.jpg"; // Importa tu imagen aquí
 const DatosPersonales = () => {
   return (
     <>
-      <header className="fixed bottom-0 w-full bg-white shadow-md">
-        <nav className="flex justify-between items-center px-6 py-4 max-w-5xl mx-auto">
-          <a href="#" className="font-semibold text-lg">
+      <header className="fixed bottom-0 w-full h-10 bg-black shadow-md">
+        <nav className="flex justify-between items-center px-6 py-4 max-w-5xl mx-auto mb-10">
+          <a href="#" className="font-semibold text-m text-white">
             Emiliano Velázquez
           </a>
           <div className="hidden md:flex">
@@ -41,7 +41,8 @@ const DatosPersonales = () => {
                   href="#skills"
                   className="flex flex-col items-center text-sm text-white hover:text-black"
                 >
-                  <i className="bx bx-receipt text-xl text-white"></i>Habilidades
+                  <i className="bx bx-receipt text-xl text-white"></i>
+                  Habilidades
                 </a>
               </li>
               <li>
@@ -86,9 +87,9 @@ const DatosPersonales = () => {
                   alt=""
                   className="w-24 h-24 rounded-full mx-auto mb-4"
                 />
-                <h1 className="text-2xl font-bold">EMILIANO VELÁZQUEZ</h1>
+                <h1 className="text-xl font-bold text-white">EMILIANO VELÁZQUEZ</h1>
                 <h3 className="text-sm text-white">
-                  Estudiante de Programación - Ing. Agrónomo
+                  Estudiante de desarrollo web - Ing. Agrónomo
                 </h3>
                 <div className="mt-4">
                   <a
@@ -141,7 +142,7 @@ const DatosPersonales = () => {
                 <h2 className="text-xl font-semibold text-center mb-4">
                   Perfil
                 </h2>
-                <p className="text-sm text-gray-700">
+                <p className="text-sm text-gray-400">
                   Soy una persona muy responsable durante las horas de trabajo
                   asignado por la empresa. Orientado a las objetivos de la
                   misma, enfocado y atento a todos los detalles. Tengo una larga
@@ -150,7 +151,7 @@ const DatosPersonales = () => {
               </section>
 
               <section id="education" className="mt-8">
-                <h2 className="text-xl font-semibold text-center mb-4">
+                <h2 className="text-xl font-semibold text-center mb-4 text-white">
                   Educación
                 </h2>
                 <div className="space-y-6">
@@ -184,7 +185,7 @@ const DatosPersonales = () => {
                   </div>
                   <div className="flex items-start space-x-4">
                     <div className="flex-shrink-0 w-4">
-                    <div className="w-4 h-4 bg-gray-400 rounded-full"></div>
+                      <div className="w-4 h-4 bg-gray-400 rounded-full"></div>
                       <div className="w-px h-24 bg-gray-400 mx-auto"></div>
                     </div>
                     <div>
@@ -193,7 +194,7 @@ const DatosPersonales = () => {
                         Curricular
                       </h3>
                       <span className="text-sm text-white">
-                        Universidad Autónoma de Entre Ríos
+                        Universidad Autónoma de Entre Ríos (UADER)
                       </span>
                     </div>
                   </div>
@@ -205,23 +206,23 @@ const DatosPersonales = () => {
                   Habilidades
                 </h2>
                 <ul className="space-y-2">
-                  <li className="flex items-center">
+                  <li className="flex items-center text-white">
                     <span className="w-2 h-2 bg-gray-500 rounded-full mr-2 text-white"></span>
                     HTML
                   </li>
-                  <li className="flex items-center">
+                  <li className="flex items-center text-white">
                     <span className="w-2 h-2 bg-gray-500 rounded-full mr-2 text-white"></span>
                     CSS
                   </li>
-                  <li className="flex items-center">
+                  <li className="flex items-center text-white">
                     <span className="w-2 h-2 bg-gray-500 rounded-full mr-2 text-white"></span>
                     JAVASCRIPT
                   </li>
-                  <li className="flex items-center">
+                  <li className="flex items-center text-white">
                     <span className="w-2 h-2 bg-gray-500 rounded-full mr-2 text-white"></span>
                     HIDROPONIA
                   </li>
-                  <li className="flex items-center">
+                  <li className="flex items-center text-white">
                     <span className="w-2 h-2 bg-gray-500 rounded-full mr-2 text-white"></span>
                     CULTIVOS INTENSIVOS
                   </li>
@@ -233,11 +234,11 @@ const DatosPersonales = () => {
                   Idiomas
                 </h2>
                 <ul className="space-y-2">
-                  <li className="flex items-center">
+                  <li className="flex items-center text-white">
                     <span className="w-2 h-2 bg-gray-500 rounded-full mr-2 text-white"></span>
                     Español - Nativo
                   </li>
-                  <li className="flex items-center">
+                  <li className="flex items-center text-white">
                     <span className="w-2 h-2 bg-gray-500 rounded-full mr-2 text-white"></span>
                     Inglés - Intermedio
                   </li>
@@ -249,19 +250,19 @@ const DatosPersonales = () => {
                   Intereses
                 </h2>
                 <ul className="space-y-2">
-                  <li className="flex items-center">
+                  <li className="flex items-center text-white">
                     <span className="w-2 h-2 bg-gray-500 rounded-full mr-2 text-white"></span>
                     Programación
                   </li>
-                  <li className="flex items-center">
+                  <li className="flex items-center text-white">
                     <span className="w-2 h-2 bg-gray-500 rounded-full mr-2 text-white"></span>
                     Agronomía
                   </li>
-                  <li className="flex items-center">
+                  <li className="flex items-center text-white">
                     <span className="w-2 h-2 bg-gray-500 rounded-full mr-2 text-white"></span>
                     Hidroponia
                   </li>
-                  <li className="flex items-center">
+                  <li className="flex items-center text-white">
                     <span className="w-2 h-2 bg-gray-500 rounded-full mr-2 text-white"></span>
                     Jardinería
                   </li>
@@ -345,7 +346,7 @@ const DatosPersonales = () => {
                   </div>
                   <div className="flex items-start space-x-4">
                     <div className="flex-shrink-0 w-4">
-                    <div className="w-4 h-4 bg-gray-400 rounded-full"></div>
+                      <div className="w-4 h-4 bg-gray-400 rounded-full"></div>
                       <div className="w-px h-24 bg-gray-400 mx-auto"></div>
                     </div>
                     <div>
@@ -394,7 +395,9 @@ const DatosPersonales = () => {
                       <div className="w-px h-24 bg-gray-400 mx-auto"></div>
                     </div>
                     <div>
-                      <h3 className="text-lg font-medium text-white">John Doe</h3>
+                      <h3 className="text-lg font-medium text-white">
+                        John Doe
+                      </h3>
                       <span className="text-sm text-white">
                         CEO, Example Corp
                       </span>
@@ -407,11 +410,13 @@ const DatosPersonales = () => {
                   </div>
                   <div className="flex items-start space-x-4">
                     <div className="flex-shrink-0 w-4">
-                    <div className="w-4 h-4 bg-gray-400 rounded-full"></div>
+                      <div className="w-4 h-4 bg-gray-400 rounded-full"></div>
                       <div className="w-px h-24 bg-gray-400 mx-auto"></div>
                     </div>
                     <div>
-                      <h3 className="text-lg font-medium text-white">Jane Smith</h3>
+                      <h3 className="text-lg font-medium text-white">
+                        Jane Smith
+                      </h3>
                       <span className="text-sm text-white">
                         Manager, Tech Solutions
                       </span>
@@ -438,9 +443,9 @@ const DatosPersonales = () => {
                       <a
                         href="https://www.linkedin.com/feed/?trk=nav_back_to_linkedin"
                         target="_blank"
-                        className="social_link"
+                        className="social_link text-white"
                       >
-                        <i className="bx bxl-linkedin-square social_icon text-white"></i>{" "}
+                        <i className="bx bxl-linkedin-square social_icon "></i>{" "}
                         @EmilianoVelazquez81
                       </a>
                     </div>
@@ -450,12 +455,16 @@ const DatosPersonales = () => {
                       <div className="w-4 h-4 bg-gray-400 rounded-full"></div>
                     </div>
                     <div>
-                    <a href="https://www.instagram.com/ev.hidroponia/?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D" target="_blank" className="social_link">
-                                <i className="bx bxl-instagram social_icon text-white"></i> @ev.hidroponia
-                            </a>
+                      <a
+                        href="https://www.instagram.com/ev.hidroponia/?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"
+                        target="_blank"
+                        className="social_link text-white"
+                      >
+                        <i className="bx bxl-instagram social_icon"></i>{" "}
+                        @ev.hidroponia
+                      </a>
                     </div>
                   </div>
-
 
                   <div className="flex items-start space-x-4">
                     <div className="flex-shrink-0 w-4">
@@ -465,9 +474,9 @@ const DatosPersonales = () => {
                       <a
                         href="https://github.com/emilianostic"
                         target="_blank"
-                        className="social_link"
+                        className="social_link text-white"
                       >
-                        <i className="bx bxl-github social_icon text-white"></i>{" "}
+                        <i className="bx bxl-github social_icon"></i>{" "}
                         @emilianostic
                       </a>
                     </div>
