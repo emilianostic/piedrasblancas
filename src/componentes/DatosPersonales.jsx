@@ -7,9 +7,9 @@ const DatosPersonales = () => {
     <>
       <header className="fixed bottom-0 w-full h-10 bg-black shadow-md">
         <nav className="flex justify-between items-center px-6 py-4 max-w-5xl mx-auto mb-10">
-          <a href="#" className="font-semibold text-m text-white">
+          <h2 className="font-semibold text-m text-white">
             Emiliano Velázquez
-          </a>
+          </h2>
           <div className="hidden md:flex">
             <ul className="flex space-x-6">
               <li>
@@ -21,53 +21,36 @@ const DatosPersonales = () => {
                 </a>
               </li>
               <li>
-                <a
-                  href="#profile"
-                  className="flex flex-col items-center text-sm text-white hover:text-black"
-                >
-                  <i className="bx bx-user text-xl"></i>Perfil
-                </a>
+              
+                Perfil
+              
               </li>
               <li>
-                <a
-                  href="#education"
-                  className="flex flex-col items-center text-sm text-white hover:text-black"
-                >
-                  <i className="bx bx-book text-xl"></i>Educación
-                </a>
+              
+                  Educación
+               
               </li>
               <li>
-                <a
-                  href="#skills"
-                  className="flex flex-col items-center text-sm text-white hover:text-black"
-                >
-                  <i className="bx bx-receipt text-xl text-white"></i>
+              
+                  
                   Habilidades
-                </a>
+            
               </li>
               <li>
-                <a
-                  href="#experience"
-                  className="flex flex-col items-center text-sm text-white hover:text-black"
-                >
+               
                   <i className="bx bx-briefcase-alt text-xl"></i>Experiencia
-                </a>
+               
               </li>
               <li>
-                <a
-                  href="#certificate"
-                  className="flex flex-col items-center text-sm text-white hover:text-black"
-                >
-                  <i className="bx bx-award text-xl"></i>Certificados
-                </a>
+                
+                  Certificados
+               
               </li>
               <li>
-                <a
-                  href="#references"
-                  className="flex flex-col items-center text-sm text-white hover:text-black"
-                >
+             
+                
                   <i className="bx bx-link-external text-xl"></i>Referencias
-                </a>
+              
               </li>
             </ul>
           </div>
@@ -77,7 +60,7 @@ const DatosPersonales = () => {
         </nav>
       </header>
 
-      <main className="pt-24 bg-black">
+      <main className="pt-10 bg-black pb-10">
         <div className="max-w-5xl mx-auto p-6 bg-black shadow-md">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
@@ -114,20 +97,7 @@ const DatosPersonales = () => {
                     <span>(343) 4759182</span>
                   </div>
                 </div>
-                <div className="mt-4 space-x-4">
-                  <a href="#" className="text-white hover:text-black">
-                    <i className="bx bxl-linkedin text-2xl"></i>
-                  </a>
-                  <a href="#" className="text-white hover:text-black">
-                    <i className="bx bxl-github text-2xl"></i>
-                  </a>
-                  <a href="#" className="text-white hover:text-black">
-                    <i className="bx bxl-twitter text-2xl"></i>
-                  </a>
-                  <a href="#" className="text-white hover:text-black">
-                    <i className="bx bxl-whatsapp text-2xl"></i>
-                  </a>
-                </div>
+                
                 <i
                   className="bx bx-moon text-xl mt-4 cursor-pointer"
                   id="theme-button"
@@ -138,8 +108,8 @@ const DatosPersonales = () => {
                 ></i>
               </section>
 
-              <section id="profile" className="mt-8">
-                <h2 className="text-xl font-semibold text-center mb-4">
+              <section id="profile" className="mt-5">
+                <h2 className="text-xl font-semibold text-center mb-4 text-white">
                   Perfil
                 </h2>
                 <p className="text-sm text-gray-400">
@@ -201,7 +171,7 @@ const DatosPersonales = () => {
                 </div>
               </section>
 
-              <section id="skills" className="mt-8">
+              <section id="skills" className="mt-5">
                 <h2 className="text-xl font-semibold text-center mb-4 text-white ">
                   Habilidades
                 </h2>
@@ -229,7 +199,7 @@ const DatosPersonales = () => {
                 </ul>
               </section>
 
-              <section id="languages" className="mt-8">
+              <section id="languages" className="mt-5">
                 <h2 className="text-xl font-semibold text-center mb-4 text-white">
                   Idiomas
                 </h2>
@@ -245,7 +215,7 @@ const DatosPersonales = () => {
                 </ul>
               </section>
 
-              <section id="interests" className="mt-8">
+              <section id="interests" className="mt-5">
                 <h2 className="text-xl font-semibold text-center mb-4 text-white">
                   Intereses
                 </h2>
@@ -271,7 +241,7 @@ const DatosPersonales = () => {
             </div>
 
             <div>
-              <section id="experience" className="mt-8">
+              <section id="experience" className="mt-6">
                 <h2 className="text-xl font-semibold text-center mb-4 text-white">
                   Experiencia
                 </h2>
@@ -443,6 +413,7 @@ const DatosPersonales = () => {
                       <a
                         href="https://www.linkedin.com/feed/?trk=nav_back_to_linkedin"
                         target="_blank"
+                        rel="noopener noreferrer"
                         className="social_link text-white"
                       >
                         <i className="bx bxl-linkedin-square social_icon "></i>{" "}
@@ -458,6 +429,7 @@ const DatosPersonales = () => {
                       <a
                         href="https://www.instagram.com/ev.hidroponia/?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"
                         target="_blank"
+                        rel="noopener noreferrer"
                         className="social_link text-white"
                       >
                         <i className="bx bxl-instagram social_icon"></i>{" "}
@@ -474,6 +446,7 @@ const DatosPersonales = () => {
                       <a
                         href="https://github.com/emilianostic"
                         target="_blank"
+                        rel="noopener noreferrer"
                         className="social_link text-white"
                       >
                         <i className="bx bxl-github social_icon"></i>{" "}
